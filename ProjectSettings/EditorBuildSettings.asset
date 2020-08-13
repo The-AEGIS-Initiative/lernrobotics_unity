@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Build Version/Initialization.unity
+    guid: 4a3069aaf4163c5929d8a50836f7c54b
+  - enabled: 0
+    path: Assets/Scenes/Build Version/hello_world.unity
+    guid: bb2d646c0c001634f933213131d075c1
+  - enabled: 0
+    path: Assets/Scenes/Build Version/velocity_control.unity
+    guid: 3a0392bba6be4eb4bb1e6ddb48abc84c
+  - enabled: 0
+    path: Assets/Scenes/Build Version/data_abstraction.unity
+    guid: e0b566c80cfd5344cb0baefd679ecde6
+  - enabled: 1
+    path: Assets/Scenes/Build Version/level_builder.unity
+    guid: 8bbcb5260268a794d9435bab07b2fb95
+  - enabled: 1
+    path: Assets/Scenes/Build Version/blank_scene.unity
+    guid: aedbbe1b9c8a2bb42b3d91738fb1ee1c
+  m_configObjects: {}

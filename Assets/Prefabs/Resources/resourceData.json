@@ -1,0 +1,66 @@
+{
+	"assets": [{
+			"name": "Robot",
+			"type": "Robot",
+			"unstackable": ["Maze End", "Wall", "Robot"],
+			"limit": "1",
+			"layer": 5,
+			"attributes": []
+		},
+		{
+			"name": "Maze End",
+			"type": "Exit",
+			"unstackable": ["Wall", "Robot", "Maze End"],
+			"limit": -1,
+			"layer": 5,
+			"attributes": [{
+				"component": "ReachedDestinationEvent",
+				"field": "Target_vel_x"
+			},
+			{
+				"component": "ReachedDestinationEvent",
+				"field": "Target_vel_y"
+			},
+			{
+				"component": "ReachedDestinationEvent",
+				"field": "Tolerance"
+			}]
+		},
+		{
+			"name": "Wall",
+			"type": "Wall",
+			"unstackable": ["Maze End", "Robot", "Floor", "Wall", "DamageTile"],
+			"limit": -1,
+			"layer": 5,
+			"attributes": []
+		},
+		{
+			"name": "Floor",
+			"type": "Floor",
+			"unstackable": ["Wall", "Floor", "DamageTile"],
+			"limit": -1,
+			"layer": 0,
+			"attributes": [{
+				"component": "GraphNode",
+				"field": "NodeName"
+			},{
+				"component": "GraphNode",
+				"field": "AdjNodes"
+			}]
+		},
+		{
+			"name": "DamageTile",
+			"type": "Floor",
+			"unstackable": ["Wall", "Floor", "DamageTile"],
+			"limit": -1,
+			"layer": 0,
+			"attributes": [{
+				"component": "GraphNode",
+				"field": "NodeName"
+			},{
+				"component": "GraphNode",
+				"field": "AdjNodes"
+			}]
+		}
+	]
+}
