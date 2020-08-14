@@ -9,3 +9,7 @@ This repo is the code base for the robotics physics simulator used in [LERNRobot
 1. `git clone https://github.com/The-AEGIS-Initiative/lernrobotics_unity.git`
 2. In Unity Hub, go to `Projects` -> `ADD` -> `<path-to-cloned-repo-folder>`
 3. Open the project in Unity Hub
+
+## Usage
+1. In Unity, `Window` -> `Github`
+2. Use the Github panel for version conrol options
